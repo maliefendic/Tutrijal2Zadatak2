@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" stylesheets="/css/project.css" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rs.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints fillHeight="false" />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Button mnemonicParsing="false" onAction="#nadjiSumaCifara" text="Ispiši" GridPane.columnIndex="2" />
+      <TextField fx:id="textField" onKeyReleased="#provjera" prefWidth="50" GridPane.columnIndex="1" />
+      <Label text="Unesite Broj " />
+      <TextArea fx:id="textArea" GridPane.columnSpan="3" GridPane.rowIndex="1">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding></TextArea>
+   </children>
+</GridPane>
