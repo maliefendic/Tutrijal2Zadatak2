@@ -13,6 +13,7 @@ public class Main extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("/fxml/sample.fxml"));
         primaryStage.setTitle("Brojevi koji su djeljivi sa svojom sumom");
         primaryStage.setScene(new Scene(root, 400, 275));
+        primaryStage.setResizable(false);
         primaryStage.show();
     }
 

@@ -13,8 +13,6 @@ public class Controller {
     public TextField textField;
     public int sumaCifara(int x){
 
-
-
        int suma=0;
        while (x!=0){
            suma+=(x%10);
@@ -28,11 +26,9 @@ public class Controller {
          alert.setTitle("Pogresan unos");
          alert.setHeaderText(null);
          alert.setContentText("Morate unijeti cijeli broj");
-
          alert.showAndWait();
 
      }
-
         int x= Integer.parseInt(textField.getText());
         int niz[] = new  int[x];
         int j=0;
@@ -41,18 +37,17 @@ public class Controller {
              niz[j]=i;
              j++;
          }
+        }
          String s ="";
-         for(int k=0;k<j;k++){  // zasto ovdje nisam mogao deklaristai varijablu int i?????????
-             s+=niz[k];
-             if(k!=j-1){
+         for(int i=0;i<j;i++){  // zasto ovdje nisam mogao deklaristai varijablu int i?????????
+             s+=niz[i];
+             if(i!=j-1){
                  s+=", ";
              }
          }
          s+=".";
         textArea.setText(s);
-        }
     }
-
 
     public void provjera(KeyEvent keyEvent) {
        String s= textField.getText();
